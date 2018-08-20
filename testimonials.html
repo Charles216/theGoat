@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>appDoption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+</head>
+
+<body>
+    <!-- Header/Logo Div -->
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col s12 m6">
+                <a href="http://charles216.github.io/theGoat/index.html"><img src="assets/images/logo.png" alt="appDoption Logo"></a>
+            </div>
+            <div class="col s12 m6" id="info">
+                <p>appDoption, the easiest way to find your next pet</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer cyan">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m2 l2 valign-wrapper">
+                    <h6><a class="white-text" href="about.html">About</a></h6>
+                </div>
+                <div class="col s12 m2 l2 valign-wrapper ">
+                    <h6><a class="white-text" href="search.html">Shelters</a></h6>
+                </div>
+                <div class="col s12 m2 l4 center-align">
+                    <h5>appDoption</h5>
+                </div>
+                <div class="col s12 m2 l2 valign-wrapper">
+                    <h6><a class="white-text" href=" testimonials.html ">Testimonials</a></h6>
+                </div>
+                <div class="col s12 m2 l2 valign-wrapper ">
+                    <h6><a class="white-text " href="contact.html ">Contact</a></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright cyan darken-2 ">
+            <div class="container center-align ">
+                appDoption © 2018
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js "></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDoJf3CBT5LqhdHT9SGweLW52sSJpMi3Jg ",
+            authDomain: "appdoption.firebaseapp.com ",
+            databaseURL: "https://appdoption.firebaseio.com ",
+            projectId: "appdoption ",
+            storageBucket: "appdoption.appspot.com ",
+            messagingSenderId: "919588488 "
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+ <!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <!--HERE javascript-->
+ <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+ <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+ <!-- Base Javascript -->
+ <script src="assets/javascript/app.js"></script>
+ <script src="assets/javascript/location.js"></script>
+ <script src="assets/materialize.js"></script>
+
+</body>
+
+</html>

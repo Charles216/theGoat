@@ -15,8 +15,9 @@
 
     <!-- Our CSS -->
 
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> -->
 
+    
 
 </head>
 
@@ -26,13 +27,12 @@
         <div class="row"></div>
         <div class="row">
             <div class="col s12 m6">
-                <img src="assets/images/logo.png" alt="appDoption Logo">
+
+           <a href="http://charles216.github.io/theGoat/index.html"><img src="assets/images/logo.png" alt="appDoption Logo"></a>
             </div>
             <div class="col s12 m6" id="info">
-                <p>appDoption is the easiest way to search for adoptable pets in your area. Instead of getting bogged down
-                    with lots of info, we show you pictures of adoptable pets in your area so you can easily fall in love
-                    with your new best friend.</p>
-            </div>
+                <p>appDoption, the easiest way to find your next pet</p>
+          </div>
         </div>
     </div>
 
@@ -41,13 +41,12 @@
         <div class="row">
 
             <!-- Zip Code Search-->
-            <!-- Show/Hide this div for populating search results -->
-            <div class="col s12 center-align">
-
+            <!-- Hide this div for populating search results -->
+            <div class="col s12 center-align" id="hide">
                 <div class="col s12 m4 l2"></div>
                 <div class="col s12 m4 l8 center-align">Enter your zipcode to search
                     <div class="input-field center-align">
-                        <input id="email_inline" type="email" class="validate">
+                        <input id="zipCode" type="email" class="validate">
                     </div>
                 </div>
                 <div class="col s12 m4 l2"></div>
@@ -55,38 +54,57 @@
             </div>
         </div>
 
+        <!-- Also Hide this div-->
+        <!-- Row for Search Images -->
 
         <div class="row center-align">
             <div class="col s12">
                 <!-- Image for Dog Search -->
                 <div class="col s12 m6 dog">
+
                     <img src="assets/images/dog.png" alt="dog search">
+                    <img id="dogBtn" src="assets/images/dog.png" alt="dog search">
+                    <img id="dogBtn" class="animalBtn" src="assets/images/dog.png" alt="dog search">
                     <h2>Dogs</h2>
                 </div>
 
                 <!-- Image for Cat Search -->
                 <div class="col 12 m6 cat">
-                    <img src="assets/images/cat.png" alt="cat search">
+                <img id="catBtn" class="animalBtn" src="assets/images/cat.png" alt="cat search">
                     <h2>Cats</h2>
                 </div>
             </div>
         </div>
+
+        <!-- Show this div and put search results into "results"-->
+        <div class="row" id="searchShow">
+            <div class="col s12" id="results"></div>
+        </div>
     </div>
 
 
+            <div id="results"></div>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="page-footer cyan">
+    <script ></script>
+
+
+   <!-- Footer -->
+     <footer class="page-footer cyan">
         <div class="container">
             <div class="row valign-wrapper">
                 <div class="col s12 m4 l2 valign-wrapper">
-                    <h6><a href="about.html">About</a></h6>
+                    <h6><a class="white-text href="about.html">About</a></h6>
+
                 </div>
                 <div class="col s12 m4 l8 center-align">
                     <h5>appDoption</h5>
                 </div>
-                <div class="col s12 m4 l2 valign-wrapper">
-                    <h6><a href="contact.html">Contact</a></h6>
+                <div class="col s12 m4 l2 valign-wrapper">            
+
+                <h6><a class="white-text" href="contact.html">Contact</a></h6>
+
                 </div>
             </div>
         </div>
@@ -98,19 +116,18 @@
     </footer>
 
 
-<body>
-    <div id='mapContainer'></div>
-    <!-- jQuery -->
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-        crossorigin='anonymous'></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <!--HERE javascript-->
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Base Javascript -->
-    <script src="assets/javascript/app.js"></script>
-    <script src="assets/javascript/location.js"></script>
+<!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <!--HERE javascript-->
+ <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+ <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+ <!-- Base Javascript -->
+ 
+ 
+ <!-- <script src="assets/materialize.js"></script> -->
 
-</body>
+    
+
+    </body>
 
 </html>
