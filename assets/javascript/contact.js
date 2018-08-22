@@ -54,8 +54,8 @@ database.ref().on("child_added", function (childSnapshot) {
 
     // Store everything into a variable.
     var nameData = childSnapshot.val().name;
-    var emailData = childSnapshot.val().role;
-    var messageData = childSnapshot.val().start;
+    var emailData = childSnapshot.val().email;
+    var messageData = childSnapshot.val().message;
 
     // the message Info
     console.log(nameData);
